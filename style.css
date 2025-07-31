@@ -1,56 +1,73 @@
 body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f5f7fa;
-  color: #333;
-}
-
-.hero {
- background: url('https://i.postimg.cc/fR76G3MT/pexels-duichantran-32543754.jpg') center/cover no-repeat;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
   padding: 20px;
+  margin: 0;
 }
 
-.hero h1 {
-  font-size: 3em;
+/* Make login and thank-you boxes responsive */
+.login-box, .thank-you-box {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Form elements */
+input, button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.or {
+  margin: 10px 0;
+}
+
+.facebook-btn {
+  background-color: #4267B2;
   color: white;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 5px #000;
-}
-
-.hero p {
-  font-size: 1.2em;
-  color: #eee;
-  max-width: 600px;
-  margin-bottom: 30px;
-  text-shadow: 1px 1px 3px #000;
-}
-
-.hero .button {
-  padding: 15px 30px;
-  background-color: #f31c09;
-  color: white;
-  font-size: 1.1em;
   border: none;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.hero .button:hover {
-  background-color: #e65c50;
+.links {
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
 
+#thankYouPage {
+  display: none;
+}
+
+/* Make layout adapt on smaller screens */
 @media (max-width: 600px) {
-  .hero h1 {
-    font-size: 2em;
+  body {
+    padding: 10px;
   }
-  .hero p {
-    font-size: 1em;
+
+  .login-box, .thank-you-box {
+    margin: 10px auto;
+    padding: 15px;
+    max-width: 100%; /* Remove fixed width */
+    border-radius: 0; /* Optional: flush with edges */
+    box-shadow: none; /* Optional: flatter design on mobile */
+  }
+
+  input, button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .links {
+    font-size: 0.85rem;
   }
 }
