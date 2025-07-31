@@ -1,70 +1,98 @@
-
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f5f7fa;
+  background: #e8f5e9;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  padding: 10px 20px;
+  text-align: left;
+  background-color: #a5d6a7;
+}
+
+.logo {
+  height: 50px;
 }
 
 .hero {
- background: url('https://i.postimg.cc/fR76G3MT/pexels-duichantran-32543754.jpg') center/cover no-repeat;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex: 1;
+  background: url('https://images.unsplash.com/photo-1544457070-4cd61f8a5311') center/cover no-repeat;
+  background-blend-mode: overlay;
+  background-color: rgba(200, 255, 200, 0.4);
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .hero h1 {
-  font-size: 3em;
-  color: white;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 5px #000;
+  font-size: 2.8em;
+  color: #1b5e20;
+  margin-bottom: 10px;
 }
 
 .hero p {
   font-size: 1.2em;
-  color: #eee;
-  max-width: 600px;
+  color: #2e7d32;
   margin-bottom: 30px;
-  text-shadow: 1px 1px 3px #000;
+  max-width: 600px;
+  margin: auto;
 }
 
-.hero .button {
+.button {
+  display: inline-block;
   padding: 15px 30px;
-  background-color: #df2211;
+  background-color: #43a047;
   color: white;
   font-size: 1.1em;
   border: none;
   border-radius: 30px;
   text-decoration: none;
+  margin-bottom: 20px;
   transition: background-color 0.3s ease;
 }
 
-.hero .button:hover {
-  background-color: #e65c50;
+.button:hover {
+  background-color: #2e7d32;
+}
+
+.side-image {
+  max-width: 300px;
+  width: 90%;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+footer {
+  background-color: #a5d6a7;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links a {
+  margin: 0 15px;
+  color: #1b5e20;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
-  .hero {
-    padding: 40px 20px;
-    height: auto;
-  }
-
   .hero h1 {
     font-size: 2em;
   }
 
   .hero p {
     font-size: 1em;
+  }
+
+  .side-image {
     max-width: 90%;
   }
-
-  .hero .button {
-    padding: 12px 25px;
-    font-size: 1em;
-  }
 }
-
