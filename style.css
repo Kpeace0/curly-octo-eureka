@@ -1,21 +1,136 @@
-/* Info Section Styles */
-.info-section {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 40px 20px;
-  margin: 30px auto;
-  max-width: 800px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.info-section h2 {
-  color: #2e7d32;
-  margin-bottom: 15px;
-  font-size: 1.6em;
-}
-
-.info-section p {
-  color: #444;
-  font-size: 1.05em;
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to bottom right, #a8e6cf, #dcedc1);
+  color: #333;
   line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Header with logo */
+header {
+  text-align: center;
+  padding: 15px 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  max-width: 150px;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+.hero .button {
+  padding: 15px 30px;
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.hero .button:hover {
+  background-color: #2e7d32;
+}
+
+/* Side image */
+.side-image {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: rgba(255,255,255,0.6);
+  border-top: 1px solid #ccc;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .hero {
+    padding: 30px 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.8em;
+  }
+
+  .hero p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  .hero .button {
+    font-size: 0.95em;
+    padding: 12px 20px;
+  }
+
+  .side-image {
+    max-width: 95%;
+    margin-top: 15px;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    margin: 5px;
+  }
 }
