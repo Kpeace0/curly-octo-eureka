@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+.hero {
+ background: url('https://i.postimg.cc/fR76G3MT/pexels-duichantran-32543754.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #eee;
+  max-width: 600px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.hero .button {
+  padding: 15px 30px;
+  background-color: #f31c09;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero .button:hover {
+  background-color: #e65c50;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+  .hero p {
+    font-size: 1em;
+  }
+}
