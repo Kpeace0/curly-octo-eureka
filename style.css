@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: linear-gradient(to bottom right, #a8e6cf, #dcedc1);
   color: #333;
   line-height: 1.6;
@@ -16,15 +16,21 @@ body {
 /* Header with logo */
 header {
   text-align: center;
-  padding: 20px 0;
+  padding: 15px 0;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-header img {
-  height: 60px;
+.logo {
+  height: 50px;
+  width: auto;
+  max-width: 150px;
 }
 
 /* Hero Section */
 .hero {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
   text-align: center;
   padding: 40px 20px;
   display: flex;
@@ -96,20 +102,35 @@ footer {
 
 /* Responsive */
 @media (max-width: 600px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .hero {
+    padding: 30px 10px;
+  }
+
   .hero h1 {
     font-size: 1.8em;
   }
 
   .hero p {
     font-size: 1em;
+    margin-bottom: 20px;
   }
 
   .hero .button {
-    font-size: 0.9em;
-    padding: 12px 24px;
+    font-size: 0.95em;
+    padding: 12px 20px;
   }
 
   .side-image {
-    max-width: 90%;
+    max-width: 95%;
+    margin-top: 15px;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    margin: 5px;
   }
 }
